@@ -193,7 +193,7 @@ class DanteTooltip extends React.Component {
     if (this.state.show) {
       return "dante-menu--active"
     } else {
-      return ""
+      return "dante-menu--active"
     }
   }
 
@@ -333,7 +333,7 @@ class DanteTooltip extends React.Component {
         id="dante-menu"
         ref="dante_menu"
         className={ `dante-menu ${ this.displayActiveMenu() } ${ this.displayLinkMode() } ${this.isSticky() ? 'dante-sticky-menu' : ''}` }
-        style={ this.getPosition() }
+        style={ {/*this.getPosition()*/ top: 0} }
         arrowPosition={this.state.tooltipArrowPosition}
       >
 
@@ -578,6 +578,12 @@ export const DanteTooltipConfig = (options={})=>{
         { label: 'h2', style: 'header-one', type: "block" , icon: Icons.h1 },
         { label: 'h3', style: 'header-two', type: "block",  icon: Icons.h2 },
         { label: 'h4', style: 'header-three', type: "block",  icon: Icons.h3 },
+
+        { type: "separator" },
+
+        { label: 'TXL', style: 'LEFT', type: "block",  icon: Icons.txl },
+        { label: 'TXC', style: 'CENTER', type: "block",  icon: Icons.txc },
+        { label: 'TXR', style: 'RIGHT', type: "block",  icon: Icons.txr },
 
         { type: "separator" },
         { label: 'color', type: "color" },

@@ -114,6 +114,18 @@ const EditorContainer = styled.div`
     margin-left: -3px;
     margin-top: 40px;
     padding-top: 0;
+
+    .graf--txl {
+      text-align: left;
+    }
+
+    .graf--txc {
+      text-align: center;
+    }
+
+    .graf--txr {
+      text-align: right;
+    }
   }
   .graf--h3 {
     font-family: ${props => props.theme.dante_font_family_sans};
@@ -125,6 +137,18 @@ const EditorContainer = styled.div`
     line-height: 1.2;
     margin-top: 40px;
     margin-bottom: .7em;
+
+    .graf--txl {
+      text-align: left;
+    }
+
+    .graf--txc {
+      text-align: center;
+    }
+
+    .graf--txr {
+      text-align: right;
+    }
   }
   .public-DraftStyleDefault-pre{
     overflow: inherit;
@@ -140,6 +164,30 @@ const EditorContainer = styled.div`
     color: ${props => lighten(0.3, props.theme.dante_text_color)};
     margin-top: 40px;
     margin-bottom: .6em;
+
+    .graf--txl {
+      text-align: left;
+    }
+
+    .graf--txc {
+      text-align: center;
+    }
+
+    .graf--txr {
+      text-align: right;
+    }
+  }
+
+  .graf--txl {
+    text-align: left;
+  }
+
+  .graf--txc {
+    text-align: center;
+  }
+
+  .graf--txr {
+    text-align: right;
   }
 
   .section--first .graf--h2.graf--first,

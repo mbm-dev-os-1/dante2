@@ -5,9 +5,9 @@ import { math,darken } from 'polished'
 export const AnchorStyle = styled.div`
 
   // MENU
-  position: absolute;
+  position: fixed;
   visibility: hidden;
-  z-index: 10;
+  z-index: 501;
   -webkit-transition: none;
   transition: none;
   display: none;
@@ -16,6 +16,7 @@ export const AnchorStyle = styled.div`
   display:block;
   white-space: nowrap;
 
+  width: 100%;
   height: ${props => props.theme.dante_menu_height};
   background: ${props => props.theme.dante_menu_background};
   color: ${props => props.theme.dante_menu_color};
@@ -29,7 +30,7 @@ export const AnchorStyle = styled.div`
   // &:after  -> Triangulo
 
   &.dante-menu{
-    &:after {
+    /*&:after {
       content: "";
       height: 0;
       width: 0;
@@ -42,7 +43,7 @@ export const AnchorStyle = styled.div`
     &:after {
       border-top-color: ${props => props.theme.dante_menu_background};
       bottom: -${props => math(`${props.theme.dante_menu_caret_size} * 2 - 1`)};
-    }
+    }*/
   }
 
 
@@ -187,6 +188,9 @@ export const AnchorStyle = styled.div`
   margin: 0;
   padding: 0;
   line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .dante-menu-divider {
   width: 1px;
