@@ -170,6 +170,18 @@ export function h4(){
           </svg>
 }
 
+export function txl() {
+  return 'left'
+}
+
+export function txc() {
+  return 'center'
+}
+
+export function txr() {
+  return 'right'
+}
+
 export default {
     imageWide,
     imageLeft,
@@ -193,6 +205,9 @@ export default {
     h2,
     h3,
     h4,
+    txl,
+    txc,
+    txr,
     blockquote,
     code
 }
